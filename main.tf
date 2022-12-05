@@ -1,5 +1,6 @@
 module "service_principal" {
-  source = "github.com/ptonini/terraform-azuread-service-principal"
+  source = "ptonini/service-principal/azuread"
+  version = "~> 1.0.0"
   name = var.service_principal_name
   resource_accesses = var.service_principal_resource_accesses
   roles = var.service_principal_roles
